@@ -15,7 +15,9 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
+    "lint": "npx stylelint \"**/*.{css,scss}\" --fix",
+    "start": "./bin/dev"
   },
   "devDependencies": {
     "@babel/core": "^7.19.0",
