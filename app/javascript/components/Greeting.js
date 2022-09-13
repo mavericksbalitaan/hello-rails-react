@@ -2,7 +2,9 @@ import React from 'react'
 
 function Greeting() {
   return (
-    <div>Greeting</div>
+    <div>
+      <span class="badge text-bg-primary">Greeting</span>
+    </div>
   )
 }
 
